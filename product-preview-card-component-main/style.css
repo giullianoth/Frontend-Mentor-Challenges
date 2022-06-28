@@ -37,7 +37,7 @@ body {
 
 section {
     max-width: 566px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
