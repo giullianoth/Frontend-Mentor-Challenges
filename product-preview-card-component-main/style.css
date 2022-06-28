@@ -1,0 +1,154 @@
+:root {
+
+    /* Primary Colors */
+    --color_dark_cyan: #3C8067;
+    --color_dark_cyan_hover: #1A4031;
+    --color_cream: #F2EBE3;
+
+    /* Neutral Colors */
+    --color_very_dark_blue: #1C232B;
+    --color_dark_grayish_blue: #6C7289;
+    --color_white: #FFF;
+
+    /* Typography */
+    --font_montserrat: 'Montserrat', sans-serif;
+    --font_fraunces: 'Fraunces', serif;
+    --font_size_default: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font_montserrat);
+    font-size: var(--font_size_default);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--color_cream);
+}
+
+section {
+    max-width: 566px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section .image {
+    flex-basis: 50%;
+}
+
+section .image picture img {
+    width: 100%;
+    height: 100%;
+}
+
+section .info {
+    flex-basis: 50%;
+    padding: 30px;
+    background-color: var(--color_white);
+    color: var(--color_dark_grayish_blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .info header .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+section .info header .title {
+    font-family: var(--font_fraunces);
+    font-size: 2em;
+    line-height: 1em;
+    color: var(--color_very_dark_blue);
+}
+
+section .info .desc {    
+    line-height: 1.6em;
+}
+
+section .info .desc em {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+section .info .price {
+    display: flex;
+    align-items: center;
+}
+
+section .info .price .discount_price {
+    flex-basis: 60%;
+    display: block;
+    font-family: var(--font_fraunces);
+    font-size: 2em;
+    color: var(--color_dark_cyan);
+}
+
+section .info .price .current_price {
+    flex-basis: 40%;
+    display: block;
+    font-size: 0.9em;
+    text-decoration: line-through;
+}
+
+section .info .purchase a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color_white);
+    background-color: var(--color_dark_cyan);
+    padding: 16px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+section .info .purchase a:hover {
+    background-color: var(--color_dark_cyan_hover);
+}
+
+section .info .purchase a i {
+    margin-right: 10px;
+}
+
+.attribution {
+    font-size: 0.8em;
+    color: var(--color_dark_grayish_blue);
+}
+
+.attribution a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #3E52A3;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 375px) {
+    section {
+        margin: 0 20px;
+    }
+
+    section .image {
+        flex-basis: 100%;
+    }
+
+    section .info {
+        flex-basis: 100%;
+        gap: 30px;
+    }
+}
