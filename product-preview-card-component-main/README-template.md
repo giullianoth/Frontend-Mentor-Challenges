@@ -22,10 +22,13 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### The challenge
 
-Users should be able to:
+This challenge consists of putting together a card for a product (parfum), with an image, title, description, price and purchase action link.
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+The card layout is adaptable to screen sizes at 1440px and 375px.
+
+*Este desafio consiste em montar um card de um produto (perfume), constando imagem, título, descrição, preço e link de ação para compra.*
+
+*O layout do card está adaptável aos tamanhos de tela em 1440px e 375px.*
 
 ### Screenshot
 
